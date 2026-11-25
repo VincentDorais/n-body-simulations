@@ -10,10 +10,13 @@ I currently use **N = 27**: the Sun, the planets and various satellites.\
 Masses and radii are from Wikipedia.\
 Positions and velocities are from NASA Horizons data for 26-09-2026 at 00:00:00.0000 TDB using the Solar System Barycenter.
 
+The bodies are organized in a struct of arrays (SoA).
+
+MKS units are used.
 
 ## Simple Euler method
 
-(see Euler/)
+(see **euler**)
 
 $$
 \begin{aligned}
@@ -22,7 +25,8 @@ $$
 \end{aligned}
 $$
 
-Single-threaded.
+Single thread.\
+Auto-optimizations. See result.txt and/or cargo.toml for details.
 
 ## Velocity Verlet method
 
