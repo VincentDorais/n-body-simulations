@@ -1,0 +1,23 @@
+#+OPTIONS: ^:nil
+
+# N-Body Simulations
+
+The goal is to do this in C and Rust using different techniques.\
+This is a programming learning exercice.\
+This is not a performance comparison as I cannot garantee that the C and Rust codes are 100% equivalent and furthermore I compile C with GCC while Rust is LLVM based.\
+
+Newtonian gravitation.\
+Solar system.\
+N = 27 and it include the Sun, the planets and various satellites.\
+Masses and radii are from Wikipedia.\
+Positions and velocities are from NASA Horizons data for 26-09-2026 at 00:00:00.0000 TDB and Solar System Barycenter.\
+
+## Euler
+
+Simple Euler method.\
+
+$ v_i (t_{n+1}) = v_i (t_n) + a_i (t_n) \Delta t $
+$ r_i (t_{n+1}) = r_i (t_n) + v_i (t_n) \Delta t $
+
+Single threaded.\
+No manual SIMD optimization.

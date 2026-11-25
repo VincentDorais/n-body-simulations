@@ -1,0 +1,25 @@
+Euler integrator.
+
+dt = 1 seconds
+step = 10 000 000
+
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+debug = false
+lto = true
+panic = "abort"
+incremental = false
+
+[build]
+rustflags = [
+    "-C", "target-cpu=native",
+    "-C", "target-feature=+avx2,+fma,+fast-math"
+]
+
+cargo build --release
+
+398 KB
+
+24.3 seconds

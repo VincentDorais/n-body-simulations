@@ -1,0 +1,11 @@
+Euler integrator.
+
+dt = 1 seconds
+step = 10 000 000
+
+
+gcc -O3 -march=native -mtune=native -ffast-math -fno-math-errno -fno-trapping-math -funroll-loops -fomit-frame-pointer -o gravity main.c
+
+16 KB
+
+10.8 seconds
