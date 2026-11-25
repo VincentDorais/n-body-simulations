@@ -16,8 +16,8 @@ Positions and velocities are from NASA Horizons data for 26-09-2026 at 00:00:00.
 
 Simple Euler method.\
 
-$ v_i (t_{n+1}) = v_i (t_n) + a_i (t_n) \Delta t $
-$ r_i (t_{n+1}) = r_i (t_n) + v_i (t_n) \Delta t $
+$$v_i (t_{n+1}) = v_i (t_n) + a_i (t_n) \Delta t$$
+$$r_i (t_{n+1}) = r_i (t_n) + v_i (t_n) \Delta t$$
 
 Single threaded.\
 No manual SIMD optimization.
