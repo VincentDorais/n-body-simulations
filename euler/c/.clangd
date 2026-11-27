@@ -1,0 +1,13 @@
+CompileFlags:
+  Add: [-std=gnu11, -Wall, -Wextra, -Wpedantic, -Wno-fixed-enum-extension]
+Diagnostics:
+  ClangTidy:
+    Add: [bugprone*, performance*, readability*, portability*, clang-analyzer*]
+    Remove: [readability-magic-numbers]
+  UnusedIncludes: Strict
+InlayHints:
+  BlockEnd: false
+  Designators: true
+  Enabled: true
+  ParameterNames: true
+  TypeNameLimit: 24
